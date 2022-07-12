@@ -1,0 +1,31 @@
+{
+  "name": "create-uikit-app",
+  "version": "1.0.0",
+  "description": "A collection starter templates for UI-Kit.",
+  "homepage": "https://github.com/zettca/create-uikit-app",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "zettca"
+  },
+  "bin": {
+    "create-uikit-app": "index.js"
+  },
+  "files": [
+    "index.js",
+    "template-*"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=14.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zettca/create-uikit-app.git"
+  },
+  "dependencies": {
+    "kolorist": "^1.5.1",
+    "minimist": "^1.2.6",
+    "prompts": "^2.4.2"
+  }
+}
