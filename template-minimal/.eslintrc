@@ -1,0 +1,37 @@
+{
+  "extends": ["airbnb-typescript-prettier", "ts-react-important-stuff"],
+  "rules": {
+    "no-console": "warn",
+    "no-restricted-exports": "off",
+    "import/extensions": "off",
+    "import/no-unresolved": "off", // doesn't play nicely with TS resolution
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.{ts,tsx}",
+          "**/tests.{ts,tsx}",
+          "**/setupTests.ts",
+          "**/mocks/**/*",
+          "**/*.config.{ts,js}"
+        ]
+      }
+    ],
+    "react/require-default-props": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function",
+        "unnamedComponents": "arrow-function"
+      }
+    ],
+    "react-hooks/exhaustive-deps": "error",
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { "ignoreRestSiblings": true }
+    ]
+  }
+}
